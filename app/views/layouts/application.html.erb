@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CarefulApp -- <%= @page_title %></title>
+  <%= stylesheet_link_tag "careful_styles" %>
+</head>
+<body>
+	<div id = "header">
+		<div id ="title">
+			<p> Carefully Made App </p>
+		</div>
+		<div id = "navbar">
+			<ul>
+				<li><%= link_to "Home", {:controller => "navigator", :action => "home"} %></li>
+				<li><%= link_to "Dashboard", {:controller => "navigator", :action => "dashboard"} %></li>
+				<li><%= link_to "Highlights", {:controller => "navigator", :action => "highlights"} %></li>
+				<li><%= link_to "Network", {:controller => "navigator", :action => "network"} %></li>
+				<li><%= link_to "Profile", {:controller => "navigator", :action => "profile"} %></li>
+			</ul>
+		</div>
+	</div>
+	<div id = "content">
+		<%= yield %>
+	</div>
+	<div id ="footer">
+		<p> On the way to cityswype </p>
+	</div>
+</body>
+</html>
