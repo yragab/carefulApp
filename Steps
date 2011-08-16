@@ -67,7 +67,8 @@ git branch -d modify-README
 # Now we can simply write
 git push
 
-Generate public key:
+
+Generate RSA public key:
 ssh-keygen 
 To get the rsa public key:
 pbcopy < ~/.ssh/id_rsa.pub   
