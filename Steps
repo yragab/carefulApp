@@ -62,6 +62,10 @@ git commit -a -m "Improved the README file"
 git checkout master
 # Merge branch with master
 git merge modify-README
+# Delte a branch either when merged or when screwed up
+git branch -d modify-README
+# Now we can simply write
+git push
 
 Generate public key:
 ssh-keygen 
