@@ -48,6 +48,8 @@ git commit -m "Initial commit"
 git log
 # Checks out the latest version from repository. -f: forces overwrite
 git checkout -f
+# Set path to remote repo
+git remote add origin git@github.com:yragab/carefulApp.git
 # Push to the online repo
 git push -u origin master
 # Switch to a new branch
